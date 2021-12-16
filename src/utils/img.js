@@ -4,5 +4,5 @@ const baseImg="http://localhost:4444"   // 远程服务器上的图片
 export default{
     baseImg,
     searchIcon:imgBase+'/images/icon/search.jpg',//本地图片，访问时直接$img.searchIcon
-    logo:imgBase+'/images/icon/logo.jpg',//本地图片，访问时直接$img.searchIcon
+    logo:imgBase+'/images/icon/logo.jpg',//本地图片，访问时直接$img.logo
 }

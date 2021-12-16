@@ -2,12 +2,24 @@ module.exports={
     devServer:{
         // host:'10.36.138.51',//自己的IP地址
         port:8081,//改端口
-        open:true,//浏览器打开
+        open:true,//启动完自动在浏览器打开
         proxy:{//代理模式
-            '/api':{
-                target:'http://localhost:4444',//服务器地址
+            '/laohuangli/':{
+                target:'http://v.juhe.cn',
+                changeOrigin:true   
+            },
+            '/joke/':{
+                target:'http://v.juhe.cn',
+                changeOrigin:true   
+            },
+            '/cxdq/':{
+                target:'http://apis.juhe.cn',
                 changeOrigin:true
-            }
+            },
+            '/gnyj/':{
+                target:'http://apis.juhe.cn',
+                changeOrigin:true
+            },
         }
     }
 }

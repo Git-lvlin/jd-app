@@ -3,7 +3,8 @@ import App from './App.vue'
 
 //vant组件引用,按需导入组件，是一种性能优化方案
 import { Button,Tabbar, TabbarItem ,NavBar,Swipe, SwipeItem,Search,Icon,NoticeBar,Lazyload,Grid, GridItem,
-  List,Col, Row,SwipeCell,Card,Sidebar, SidebarItem,PullRefresh,Field,Form,Stepper,GoodsAction, GoodsActionIcon, GoodsActionButton,Empty,Checkbox, CheckboxGroup,SubmitBar,Dialog,AddressList,AddressEdit,Area} from 'vant';
+  List,Col, Row,SwipeCell,Card,Sidebar, SidebarItem,PullRefresh,Field,Form,Stepper,GoodsAction, GoodsActionIcon,
+   GoodsActionButton,Empty,Checkbox, CheckboxGroup,SubmitBar,Dialog,AddressList,AddressEdit,Area,Tab,Tabs,Calendar,DropdownMenu, DropdownItem,Divider,Pagination} from 'vant';
 Vue.use(Button);
 Vue.use(Tabbar);
 Vue.use(TabbarItem);//Tab 标签页
@@ -38,6 +39,18 @@ Vue.use(Dialog)
 Vue.use(AddressList)
 Vue.use(AddressEdit)
 Vue.use(Area)
+Vue.use(Tab)
+Vue.use(Tabs)
+Vue.use(Calendar)
+Vue.use(DropdownMenu)
+Vue.use(DropdownItem)
+Vue.use(Divider)
+Vue.use(Pagination)
+
+
+
+
+
 
 
 
@@ -58,7 +71,11 @@ Vue.prototype.$img=img//挂载到vue原型对象上
 import store from './store/index.js'//导入缓存
 
 import dialog from '@/utils/dialog.js'//导入弹窗
-Vue.prototype.$dialog=dialog
+Vue.prototype.$dialog=dialog//挂载到vue原型对象上
+
+import moment from 'moment';
+Vue.prototype.$moment=moment//挂载到vue原型对象上
+
 
 Vue.config.productionTip = false
 
